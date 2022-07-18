@@ -12,6 +12,7 @@ app.get('/', (req,res) =>{
     res.render('home')
 })
 
+app.get('')
 
 
 app.listen(8080, () =>{console.log("PORT 8080")})
