@@ -9,25 +9,16 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'))
 
 
-const userSchema = mongoose.Schema(
-    {
-        username: String,
-        password: String,
-        email: String,
-    }
-)
-
-const User = mongoose.model('User', userSchema);
-
-
-
-
 app.get('/', (req,res) =>{
     res.render('home')
 })
 
 app.get('/contribute', (req,res) =>{
     res.render('contribute')
+})
+
+app.get('/login', (req,res) =>{
+    res.render('login')
 })
 
 app.get('')
